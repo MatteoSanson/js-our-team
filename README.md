@@ -6,10 +6,15 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 ### Dati
 Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
+<br>
 Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
+<br>
 Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
+<br>
 Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
+<br>
 Scott Estrada	Developer	scott-estrada-developer.jpg
+<br>
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 <br>
 
