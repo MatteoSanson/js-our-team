@@ -5,17 +5,17 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 <br>
 
 ### Dati
-Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
+Wayne Barnett - Founder & CEO - wayne-barnett-founder-ceo.jpg
 <br>
-Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
+Angela Caroll - Chief Editor - angela-caroll-chief-editor.jpg
 <br>
-Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
+Walter Gordon - Office Manager - walter-gordon-office-manager.jpg
 <br>
-Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
+Angela Lopez - Social Media Manager - angela-lopez-social-media-manager.jpg
 <br>
-Scott Estrada	Developer	scott-estrada-developer.jpg
+Scott Estrada - Developer - scott-estrada-developer.jpg
 <br>
-Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
+Barbara Ramos - Graphic Designer - barbara-ramos-graphic-designer.jpg
 <br>
 
 ## MILESTONE 0
@@ -36,3 +36,7 @@ Trasformare la stringa foto in una immagine effettiva.
 
 ## BONUS 2
 Organizzare i singoli membri in card/schede.
+<br>
+
+### Screenshot bonus2
+![screenshot (2)](https://github.com/MatteoSanson/js-our-team/assets/128544980/a6717def-4f31-4bd9-966f-8528e61ffce8)
