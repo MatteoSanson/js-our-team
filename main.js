@@ -34,3 +34,13 @@ const lista = [
 ];
 
 console.log("lista team:", lista);
+
+// let wayne = lista[0];
+// console.log ((wayne.nome), wayne);
+
+let persona;
+
+for (let i=0; i < lista.length; i++){
+    persona = lista[i];
+    console.log((persona.nome), persona);
+}
