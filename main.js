@@ -37,11 +37,26 @@ console.log("lista team:", lista);
 
 function creaPersona(persona) {
     const divElement = document.createElement('div');
-    divElement.innerHTML = `
-        <p>Nome: ${persona.nome}</p>
-        <p>Ruolo: ${persona.ruolo}</p>
-        <p>Foto: ${persona.foto}</p>
-    `;
+
+    const nomeElement = document.createElement('p');
+    const ruoloElement = document.createElement('p');
+    const fotoElement = document.createElement('p');
+    const imgElement = document.createElement('img');
+
+    nomeElement.textContent = `Nome: ${persona.nome}`;
+    ruoloElement.textContent = `Ruolo: ${persona.ruolo}`;
+    fotoElement.textContent = 'Foto:';
+
+    imgElement.src = `img/${persona.foto}`;
+    imgElement.alt = `${persona.nome}`;
+
+    divElement.append(
+        nomeElement,
+        ruoloElement,
+        fotoElement,
+        imgElement
+    );
+
     return divElement;
 }
 
@@ -59,6 +74,3 @@ for (let i = 0; i < lista.length; i++) {
 }
 
 document.body.append(containerElement);
-
-
-
