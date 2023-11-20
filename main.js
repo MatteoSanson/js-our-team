@@ -35,27 +35,12 @@ const lista = [
 
 console.log("lista team:", lista);
 
-// let wayne = lista[0];
-// console.log ((wayne.nome), wayne);
-
-// let persona;
-
-
-// for (let i=0; i < lista.length; i++){
-//     persona = lista[i];
-//     console.log((persona.nome), persona);
-//     const divElement = document.createElement('div');
-//     divElement.textContent = persona.nome + " - " + persona.ruolo+ " - "  + persona.foto;
-//     document.body.append(divElement);
-// }
-
 function creaPersona(persona) {
     const divElement = document.createElement('div');
     divElement.innerHTML = `
         <p>Nome: ${persona.nome}</p>
         <p>Ruolo: ${persona.ruolo}</p>
         <p>Foto: ${persona.foto}</p>
-        <br>
     `;
     return divElement;
 }
@@ -66,7 +51,11 @@ for (let i = 0; i < lista.length; i++) {
     const persona = lista[i];
     console.log(persona.nome, persona);
     const personaElement = creaPersona(persona);
-    containerElement.appendChild(personaElement);
+    containerElement.append(personaElement);
+
+    if (i < lista.length - 1) {
+        containerElement.append(document.createElement('br'));
+    }
 }
 
 document.body.append(containerElement);
