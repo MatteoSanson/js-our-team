@@ -4,32 +4,32 @@ const lista = [
     {
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
-        immagine: "wayne-barnett-founder-ceo.jpg"
+        foto: "wayne-barnett-founder-ceo.jpg"
     },
     {
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
-        immagine: "angela-caroll-chief-editor.jpg"
+        foto: "angela-caroll-chief-editor.jpg"
     },
     {
         nome: "Walter Gordon",
         ruolo: "Office Manager",
-        immagine: "walter-gordon-office-manager.jpg"
+        foto: "walter-gordon-office-manager.jpg"
     },
     {
         nome: "Angela Lopez",
         ruolo: "Social Media Manager",
-        immagine: "angela-lopez-social-media-manager.jpg"
+        foto: "angela-lopez-social-media-manager.jpg"
     },
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        immagine: "scott-estrada-developer.jpg"
+        foto: "scott-estrada-developer.jpg"
     },
     {
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
-        immagine: "barbara-ramos-graphic-designer.jpg"
+        foto: "barbara-ramos-graphic-designer.jpg"
     }
 ];
 
@@ -40,7 +40,14 @@ console.log("lista team:", lista);
 
 let persona;
 
+
 for (let i=0; i < lista.length; i++){
     persona = lista[i];
     console.log((persona.nome), persona);
+    const divElement = document.createElement('div');
+    divElement.textContent = persona.nome + " - " + persona.ruolo+ " - "  + persona.foto;
+    document.body.append(divElement);
 }
+
+
+
