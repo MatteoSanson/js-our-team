@@ -35,42 +35,45 @@ const lista = [
 
 console.log("lista team:", lista);
 
+
 function creaPersona(persona) {
     const divElement = document.createElement('div');
+    divElement.classList.add('card');
 
-    const nomeElement = document.createElement('p');
-    const ruoloElement = document.createElement('p');
-    const fotoElement = document.createElement('p');
+    const fotoElement = document.createElement('div');
+    fotoElement.classList.add('immagine');
     const imgElement = document.createElement('img');
+    const nomeElement = document.createElement('h4');
+    nomeElement.classList.add('nome');
+    const ruoloElement = document.createElement('p');
+    ruoloElement.classList.add('ruolo');
+    
 
-    nomeElement.textContent = `Nome: ${persona.nome}`;
-    ruoloElement.textContent = `Ruolo: ${persona.ruolo}`;
-    fotoElement.textContent = 'Foto:';
+    nomeElement.textContent = `${persona.nome}`;
+    ruoloElement.textContent = `${persona.ruolo}`;
 
     imgElement.src = `img/${persona.foto}`;
     imgElement.alt = `${persona.nome}`;
 
+    fotoElement.append(imgElement);
+
     divElement.append(
-        nomeElement,
-        ruoloElement,
         fotoElement,
-        imgElement
+        nomeElement,
+        ruoloElement
     );
 
     return divElement;
 }
 
-const containerElement = document.createElement('div');
+const mainElement = document.createElement('main');
 
 for (let i = 0; i < lista.length; i++) {
     const persona = lista[i];
     console.log(persona.nome, persona);
     const personaElement = creaPersona(persona);
-    containerElement.append(personaElement);
-
-    if (i < lista.length - 1) {
-        containerElement.append(document.createElement('br'));
-    }
+    mainElement.append(personaElement);
 }
 
-document.body.append(containerElement);
+
+document.querySelector('body').append(mainElement);
