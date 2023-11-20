@@ -6,6 +6,7 @@
 
 body {
     background-color: #f5f5f1;
+    font-family: 'Roboto', sans-serif;
 }
 
 header, main {
@@ -49,6 +50,7 @@ main {
 
 h4.nome {
     padding: 1.25rem 0 .625rem 0;
+    font-family: 'Bodoni Moda', serif;
 }
 
 p.ruolo {
